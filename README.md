@@ -55,9 +55,16 @@ The downloaded review data and NRC lexicon are kept in the local `data/` folder 
 - `three_class_model.py`: Runs the three-class classifier.
 - `analyze_three_class.py`: Summarizes three-class results.
 - `three_class_chart.py`: Builds the accuracy chart.
+- `final_dashboard.py`: Generates the interactive balanced three-class dashboard.
+- `final_dashboard.html`: The finished dashboard, viewable in a browser.
 
-## Dashboard screenshot
-![Amazon review classifier dashboard](screenshots/dashboard.png)
+## Final dashboard
+
+The final dashboard shows the balanced three-class results, star-rating distribution, confusion matrix, per-class accuracy, and an interactive review table. The class and correctness filters update the visible review count.
+
+![Balanced three-class Amazon review dashboard](screenshots/dashboard.png)
+
+To regenerate the dashboard, run `python final_dashboard.py` and open `final_dashboard.html` in a browser.
 
 ## How to run
 
