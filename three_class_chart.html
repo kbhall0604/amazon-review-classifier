@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Three-Class Sentiment Accuracy</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 850px;
+         margin: 60px auto; color: #1f2937; }
+  h1 { margin-bottom: 8px; }
+  p { color: #64748b; }
+  .row { display: grid; grid-template-columns: 100px 1fr 130px;
+          align-items: center; gap: 16px; margin: 28px 0; }
+  .track { height: 32px; background: #e5e7eb; border-radius: 8px; }
+  .fill { height: 100%; border-radius: 8px; }
+</style>
+</head>
+<body>
+<h1>Sentiment classification accuracy</h1>
+<p>Balanced sample: 50 Amazon gift card reviews per class</p>
+<div class="row"><strong>POSITIVE</strong><div class="track"><div class="fill" style="width:92.0%;background:#22c55e"></div></div><span>46/50 (92%)</span></div><div class="row"><strong>NEUTRAL</strong><div class="track"><div class="fill" style="width:30.0%;background:#f59e0b"></div></div><span>15/50 (30%)</span></div><div class="row"><strong>NEGATIVE</strong><div class="track"><div class="fill" style="width:96.0%;background:#ef4444"></div></div><span>48/50 (96%)</span></div>
+<p>Overall: 109/150 correct (72.7%)</p>
+</body>
+</html>

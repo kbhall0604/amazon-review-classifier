@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amazon Review Sentiment Dashboard</title>
+<style>
+:root { --ink: #24332f; --green: #24775e; --cream: #f7f4ec; --card: #ffffff; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--cream); color: var(--ink);
+       font-family: Arial, sans-serif; }
+main { max-width: 1200px; margin: auto; padding: 40px 24px; }
+h1 { font-size: 36px; margin-bottom: 8px; }
+.subtitle { color: #596b64; margin-bottom: 28px; }
+.cards { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 32px; }
+.card { background: var(--card); border-radius: 16px; padding: 24px;
+        min-width: 180px; flex: 1; box-shadow: 0 4px 18px #24332f12; }
+.card strong { display: block; color: var(--green); font-size: 32px; }
+.card span { color: #596b64; }
+.controls { margin: 20px 0; }
+button { border: 1px solid var(--green); border-radius: 8px; padding: 10px 16px;
+         background: white; color: var(--green); cursor: pointer; margin-right: 8px; }
+button:hover, button.active { background: var(--green); color: white; }
+.table-wrap { overflow-x: auto; background: white; border-radius: 14px; }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 14px; text-align: left; vertical-align: top;
+         border-bottom: 1px solid #e7e9e4; }
+th { background: #e9f1eb; }
+.review-text { color: #596b64; }
+tr[data-status="Mismatch"] .status { color: #ad4f35; font-weight: bold; }
+tr[data-status="Correct"] .status { color: var(--green); font-weight: bold; }
+</style>
+</head>
+<body>
+<main>
+<h1>Amazon review sentiment</h1>
+<p class="subtitle">Gift Cards · First 100 reviews · Binary classification</p>
+<section class="cards">
+  <div class="card"><strong>98%</strong><span>Model accuracy</span></div>
+  <div class="card"><strong>98 / 100</strong><span>Correct predictions</span></div>
+  <div class="card"><strong>100</strong><span>Reviews saved</span></div>
+</section>
+<h2>Explore the reviews</h2>
+<div class="controls">
+  <button class="active" onclick="filterRows('All', this)">All</button>
+  <button onclick="filterRows('Correct', this)">Correct</button>
+  <button onclick="filterRows('Mismatch', this)">Mismatches</button>
+  <span id="visible-count"></span>
+</div>
+<div class="table-wrap">
+<table>
+<thead><tr><th>#</th><th>Rating</th><th>Rating class</th>
+<th>Model class</th><th>Result</th><th>Review</th></tr></thead>
+<tbody><tr data-status='Correct'><td>1</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Great gift<br><span class='review-text'>Having Amazon money is always good.</span></td></tr>
+<tr data-status='Correct'><td>2</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>amazon gift card<br><span class='review-text'>Always the perfect gift.  I have never given one and had someone seem or act disappointed.  Just the opposite.  They are thrilled and excited to have a bit of a spree.  Always the perfect size and color!  Arrives in 1 day in most cases.  So it&#x27;s never too late!  Lots of cards to chose from... thank you... birthday... wedding..baby..  and many that work for many occasions...</span></td></tr>
+<tr data-status='Correct'><td>3</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>perfect gift<br><span class='review-text'>When you have a person who is hard to shop for.. an amazon gift card is P E R F E C T.  Man or woman...  No matter what their hobby... lifestyle.. or age.  All you have to do is pick the $.  Don&#x27;t forget to mention that it is a GIFT when you check out - you will have some gift card options.  I&#x27;ve ordered many of these over years.  They are always received with glee.  Woo hoo!  If you&#x27;re looking for a great fit for me - this is just my size!  :)  Best to all!</span></td></tr>
+<tr data-status='Correct'><td>4</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Nice looking<br><span class='review-text'>The tin is a nice touch and pretty large.  It&#x27;s about 4&amp;#34; in diameter and about 1/2&amp;#34; thick.  I added a pretty red ribbon and it is perfect.  Who doesn&#x27;t love shopping on Amazon? Arrived quickly, I have Prime... but I think they ship the gift cards out SUPER fast... like over night. In case you need it for a FAST gift.</span></td></tr>
+<tr data-status='Correct'><td>5</td><td>1.0 stars</td><td>NEGATIVE</td><td>NEGATIVE</td><td class='status'>Correct</td><td>Not $10 Gift Cards<br><span class='review-text'>I bought this pack of Starbucks Gift cards in 2019. Ive given them to friends and I gave 2 to my daughter.&lt;br /&gt;My daughter used one recently and it had $6.52 on the card not $10.00. She had the cashier check the balance of the other card and it had $5.32 on it! She had forgotten that she had these gift cards, so yes, 2 years later decided to use the when she found them! Do they decline in value? And then both had random amounts on them! I&#x27;m embarrassed now to have given them as gifts! Friends receiving the gift card aren&#x27;t going to tell you that weren&#x27;t able to cover their order with the card you gave them!!!</span></td></tr>
+<tr data-status='Correct'><td>6</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Cute!<br><span class='review-text'>That snowman tin is adorable</span></td></tr>
+<tr data-status='Correct'><td>7</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Easy gift<br><span class='review-text'>Great and easy gift</span></td></tr>
+<tr data-status='Correct'><td>8</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Great gift<br><span class='review-text'>Super cute nice quality tin&lt;br /&gt;Your choose amount</span></td></tr>
+<tr data-status='Correct'><td>9</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Gifts for my two granddaughters<br><span class='review-text'>They love it !!</span></td></tr>
+<tr data-status='Correct'><td>10</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Great for saying “thank you” to the mail person, farrier, yard man,etc<br><span class='review-text'>So many people&lt;br /&gt;Make your life better so remember them!</span></td></tr>
+<tr data-status='Correct'><td>11</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Convenient, safe, and perfect gift<br><span class='review-text'>My grandson inlaw loves his gift cards, so it&#x27;s the perfect gift for Christmas</span></td></tr>
+<tr data-status='Correct'><td>12</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Giftcard<br><span class='review-text'>What can you say about a gift card? Well, it was valid. It&#x27;s a good gift for someone who doesn&#x27;t like to cook. Arrived promptly.</span></td></tr>
+<tr data-status='Correct'><td>13</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Simple giftcard!<br><span class='review-text'>Easy way to gift money for birthdays.</span></td></tr>
+<tr data-status='Correct'><td>14</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Great giftcard<br><span class='review-text'>Great gift for online shoppers!</span></td></tr>
+<tr data-status='Correct'><td>15</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Easy..<br><span class='review-text'>Reloading is easy. Shopping is easy. Amazon is easy.</span></td></tr>
+<tr data-status='Correct'><td>16</td><td>1.0 stars</td><td>NEGATIVE</td><td>NEGATIVE</td><td class='status'>Correct</td><td>One Star<br><span class='review-text'>Card did not work!!!!</span></td></tr>
+<tr data-status='Correct'><td>17</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Great Product.<br><span class='review-text'>I bought this for a Christmas gift.The recipient really liked it.</span></td></tr>
+<tr data-status='Mismatch'><td>18</td><td>5.0 stars</td><td>POSITIVE</td><td>NEGATIVE</td><td class='status'>Mismatch</td><td>No note attached to sent gift card<br><span class='review-text'>What a pretty gift card presentation , the recipient loved it ! I have one complaint , I took the time and wrote a short note to the recipient of the gift card so she knew who and why the GC was being sent but the note wasn’t attached. I’ve used the option to write a note on many occasions and several times it showed up without the note . I actually had to contact her to ask if she had checked her mail knowing it had arrived .</span></td></tr>
+<tr data-status='Correct'><td>19</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Gift card<br><span class='review-text'>Perfect! Arrived just when stated!</span></td></tr>
+<tr data-status='Correct'><td>20</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Good<br><span class='review-text'>Good gift card</span></td></tr>
+<tr data-status='Correct'><td>21</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Good Product<br><span class='review-text'>Good Product</span></td></tr>
+<tr data-status='Correct'><td>22</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Good Product<br><span class='review-text'>Good Product</span></td></tr>
+<tr data-status='Correct'><td>23</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Good Product<br><span class='review-text'>Good Product</span></td></tr>
+<tr data-status='Correct'><td>24</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Good Product<br><span class='review-text'>Good Product</span></td></tr>
+<tr data-status='Correct'><td>25</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Good Product<br><span class='review-text'>Good Product</span></td></tr>
+<tr data-status='Correct'><td>26</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Good product<br><span class='review-text'>Good product</span></td></tr>
+<tr data-status='Correct'><td>27</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Good product<br><span class='review-text'>Good product</span></td></tr>
+<tr data-status='Correct'><td>28</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Good Product<br><span class='review-text'>Good Product</span></td></tr>
+<tr data-status='Correct'><td>29</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Good Product<br><span class='review-text'>Good Product</span></td></tr>
+<tr data-status='Correct'><td>30</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Good<br><span class='review-text'>Good</span></td></tr>
+<tr data-status='Correct'><td>31</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Gift card<br><span class='review-text'>Perfect for Christmas</span></td></tr>
+<tr data-status='Correct'><td>32</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>So easy<br><span class='review-text'>Easy to do</span></td></tr>
+<tr data-status='Correct'><td>33</td><td>2.0 stars</td><td>NEGATIVE</td><td>NEGATIVE</td><td class='status'>Correct</td><td>Mistake<br><span class='review-text'>Hit button by mistake n deduction from credit card on file</span></td></tr>
+<tr data-status='Correct'><td>34</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Great gift idea<br><span class='review-text'>Always great to order from my home. Amazon rocks!</span></td></tr>
+<tr data-status='Correct'><td>35</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Secure<br><span class='review-text'>So easy to use and recipients get to choose how to use it.</span></td></tr>
+<tr data-status='Correct'><td>36</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Birthday surprise!<br><span class='review-text'>This was a good birthday surprise!</span></td></tr>
+<tr data-status='Correct'><td>37</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Birthday Gift<br><span class='review-text'>Have given as Holiday, Birthday &amp; Other Occasions remembrances. Always appreciated by the person receiving.</span></td></tr>
+<tr data-status='Correct'><td>38</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Fun<br><span class='review-text'>Awesome &amp; they work</span></td></tr>
+<tr data-status='Correct'><td>39</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Reload is super easy.<br><span class='review-text'>Really ready to reload gift cards.</span></td></tr>
+<tr data-status='Correct'><td>40</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Convenience of giftabiliy.<br><span class='review-text'>A great way to give a gift to family members in physical form. It was so convenient.</span></td></tr>
+<tr data-status='Correct'><td>41</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Great Gift Package<br><span class='review-text'>Nice gift packaging for any event</span></td></tr>
+<tr data-status='Correct'><td>42</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Grest Sandwitches !!<br><span class='review-text'>Perfect and I even used Amazon Points - was mailed right out.</span></td></tr>
+<tr data-status='Correct'><td>43</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>GOOD PIZZA !!<br><span class='review-text'>Perfect and I even used Amazon Points - was mailed right out.</span></td></tr>
+<tr data-status='Correct'><td>44</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>We like this Store and they stock Tons of different Items for all kinds of Pets<br><span class='review-text'>Our cats love this place.</span></td></tr>
+<tr data-status='Correct'><td>45</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Money was loaded on card<br><span class='review-text'>Was cute and the money was loaded when it arrived</span></td></tr>
+<tr data-status='Correct'><td>46</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>👍<br><span class='review-text'>👍</span></td></tr>
+<tr data-status='Correct'><td>47</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Love it!!<br><span class='review-text'>This is an online gift card nothing to show sorry🤪</span></td></tr>
+<tr data-status='Correct'><td>48</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Five Stars<br><span class='review-text'>Gift cards are always a hit.</span></td></tr>
+<tr data-status='Correct'><td>49</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>So cool you can get a free tin with the gift ...<br><span class='review-text'>So cool you can get a free tin with the gift card and it comes in 24 hours!! Super awesome. Last year I just printed off the gift cards which looked kind of cheap even though the cards were for substantial amounts. Highly recommend.</span></td></tr>
+<tr data-status='Correct'><td>50</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Reccomend<br><span class='review-text'>Really easy to load</span></td></tr>
+<tr data-status='Correct'><td>51</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Little sister surprise<br><span class='review-text'>Same gift as her big sister&#x27;s, this little one can choose the exact thing she most desires and run to the door for three days in anticipation.  A combined birthday and Christmas present for one who knows her own mind.  Good choice!</span></td></tr>
+<tr data-status='Correct'><td>52</td><td>1.0 stars</td><td>NEGATIVE</td><td>NEGATIVE</td><td class='status'>Correct</td><td>The added value was great, but no more<br><span class='review-text'>Purchasing an Amazon gift card came with an added monetary value but no more.&lt;br /&gt;&lt;br /&gt;A Bronx cheer for you!</span></td></tr>
+<tr data-status='Correct'><td>53</td><td>4.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Perfect gift!<br><span class='review-text'>This is near where I work and has a drive through.  Nothing better during these times to give than a gift of good food they can pick up with minimal contact. Gift cards are the way to go these days!</span></td></tr>
+<tr data-status='Correct'><td>54</td><td>4.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Great staff appreciation gift!<br><span class='review-text'>What better gift during these times than one to treat yourself.  This is a great gift I gave out to my staff and even those who don&#x27;t read liked the idea of being able to listen to the audiobooks as well as there being content and other media through Audible.</span></td></tr>
+<tr data-status='Correct'><td>55</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Cute cute cute!<br><span class='review-text'>I love the tin! The gift cards can be ordered on different amounts.</span></td></tr>
+<tr data-status='Correct'><td>56</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Five Stars<br><span class='review-text'>Simple and easy.</span></td></tr>
+<tr data-status='Correct'><td>57</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>As described.<br><span class='review-text'>Being able to reload the gift card is a time saver.</span></td></tr>
+<tr data-status='Correct'><td>58</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Perfect gift for any occasion. Let them pick out what they love!<br><span class='review-text'>I mean really, who wouldn&#x27;t LOVE this?!?  Wonderful gift for any occasion.</span></td></tr>
+<tr data-status='Correct'><td>59</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>12 year old daughter loved this gift!<br><span class='review-text'>Perfect gift for your kids!</span></td></tr>
+<tr data-status='Correct'><td>60</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Easy to send to an Amazon shopper<br><span class='review-text'>This is a simple gift to friends or family. For me it was easy to setup. Took ok only about 30 seconds. I also redeem Visa gifts by giving the gift card to myself. I like there isnt a fee. I do want Amazon to make some cooler cards with my animation when a receiver gets it.</span></td></tr>
+<tr data-status='Correct'><td>61</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Rec&#x27;d promo from Amazon when reloading gift card.<br><span class='review-text'>Bonus, rec&#x27;d a promo from Amazon for reloading gift card.  Yeah.&lt;br /&gt;&lt;br /&gt;Gift card was posted to my account quickly.</span></td></tr>
+<tr data-status='Correct'><td>62</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Saves a Little Over time.<br><span class='review-text'>Nice way to save a few bucks overtime by reloading your own gift card.</span></td></tr>
+<tr data-status='Correct'><td>63</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>What a great company<br><span class='review-text'>Who wouldn&#x27;t want an Amazon gift card?  The box foretold the contents, lol.</span></td></tr>
+<tr data-status='Correct'><td>64</td><td>1.0 stars</td><td>NEGATIVE</td><td>NEGATIVE</td><td class='status'>Correct</td><td>A problem to use at drive thru&#x27;s<br><span class='review-text'>I only used the $50 card one time at Burger King. It was difficult to use. Must be run as credit, not as gift card. No remaining balance is given at the end of the transaction. And although it&#x27;s on me, I misplaced or lost this card after only spending about $6 of it. I was hoping that the seller could provide me with the full card number so that I could at least use it online for other purchases. They failed to respond. I have the receipt from BK, but it only shows the last 4 numbers. There isn&#x27;t a way of contacting happy cards customer service online that I could figure out. I wish I&#x27;d just stuck with credit cards. A lot safer.</span></td></tr>
+<tr data-status='Correct'><td>65</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>A gift card does make a great gift for a tweenager.<br><span class='review-text'>We all know the kid who wants nothing. Or actually wants everything but nothing is good enough. YES,YES,the secret weapon. A AMAZON GIFT CARD!!  You pulled it off. You showed your love and you are the best and greatest. Happy Birthday to just because,You are the BEST!!</span></td></tr>
+<tr data-status='Correct'><td>66</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Nice to have<br><span class='review-text'>This comes in  very handy, and makes the guilt less</span></td></tr>
+<tr data-status='Correct'><td>67</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Excellent Gift<br><span class='review-text'>Who would not like an Amazon Gift Card?  Makes everyone I give them, happy!</span></td></tr>
+<tr data-status='Correct'><td>68</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Yay so easy!<br><span class='review-text'>So easy! No scraping!</span></td></tr>
+<tr data-status='Correct'><td>69</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>:)<br><span class='review-text'>easy to use</span></td></tr>
+<tr data-status='Correct'><td>70</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>10/10<br><span class='review-text'>works great</span></td></tr>
+<tr data-status='Correct'><td>71</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Perfect for a birthday 🎂<br><span class='review-text'>Another nice gift box from Amazon. With the world the way it is now I had to send a gift rather than going to a party. And Amazon has a good selection of gift boxes and fast shipping so my nephew was happy when he received the card in the mail.</span></td></tr>
+<tr data-status='Correct'><td>72</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Perfect!<br><span class='review-text'>Bought this for a gift and was very happy it shipped quickly and they received it just in time! Amazon is awesome! 🤩</span></td></tr>
+<tr data-status='Correct'><td>73</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Gift box nice!<br><span class='review-text'>Love the gift box. So much j NB icee than just handing a gift card to the grandkids.</span></td></tr>
+<tr data-status='Correct'><td>74</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>It was soooo easy<br><span class='review-text'>It was a nice way to give a present</span></td></tr>
+<tr data-status='Correct'><td>75</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>great<br><span class='review-text'>great buy</span></td></tr>
+<tr data-status='Correct'><td>76</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Amazon Thinks of Everything!<br><span class='review-text'>GREAT idea!  I was so happy to have these on hand for the Holidays!</span></td></tr>
+<tr data-status='Correct'><td>77</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Amazon lover giftee?  Buy it!<br><span class='review-text'>So gift card for certain sum.  No service fee.  Lively metal gift box - yes..... I said metal.  What is not to love about this???!&lt;br /&gt;&lt;br /&gt;Well done Amazon.  Well done.</span></td></tr>
+<tr data-status='Correct'><td>78</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Timing<br><span class='review-text'>Great timing.</span></td></tr>
+<tr data-status='Correct'><td>79</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Was easy to do<br><span class='review-text'>Easy to use</span></td></tr>
+<tr data-status='Correct'><td>80</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>PENGUINS<br><span class='review-text'>So so cute!</span></td></tr>
+<tr data-status='Correct'><td>81</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Believe this is the best gift to give !<br><span class='review-text'>The recipient can choose what they want so the giver has less chance of a mistake.</span></td></tr>
+<tr data-status='Correct'><td>82</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>convenient<br><span class='review-text'>A great and convenient gift idea-price is right too!</span></td></tr>
+<tr data-status='Correct'><td>83</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Five Stars<br><span class='review-text'>The gift card came in a pretty box.&lt;br /&gt;Thanks Amozan.</span></td></tr>
+<tr data-status='Correct'><td>84</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Best gift for someone you don’t know what to get<br><span class='review-text'>This was for a gift</span></td></tr>
+<tr data-status='Correct'><td>85</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Great value<br><span class='review-text'>Made my shopping much better good value</span></td></tr>
+<tr data-status='Correct'><td>86</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Sweet gift!<br><span class='review-text'>I sent this to my brother and he couldn&#x27;t stop talking about it. This boxes puts a little more nice into a gift. Very pretty!</span></td></tr>
+<tr data-status='Correct'><td>87</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Amazing<br><span class='review-text'>It can be used for a variety of things.</span></td></tr>
+<tr data-status='Correct'><td>88</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Great Holder<br><span class='review-text'>Great holder for gift cards</span></td></tr>
+<tr data-status='Correct'><td>89</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Gift card<br><span class='review-text'>Makes these so easy for any holiday and especially stops buying something people do not like</span></td></tr>
+<tr data-status='Correct'><td>90</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Starbuck gift card<br><span class='review-text'>My friend like the gift card like the sweater for holiday card</span></td></tr>
+<tr data-status='Correct'><td>91</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Good litte thank-you gifts<br><span class='review-text'>I&#x27;m happy they did not cost me more than their face value to buy. I gave them out as a nice thank you to those who helped me with small things around my house. I sent them in the mail as a surprise, knowing money or gifts was not necessary. I recommend them.</span></td></tr>
+<tr data-status='Correct'><td>92</td><td>3.0 stars</td><td>NEGATIVE</td><td>NEGATIVE</td><td class='status'>Correct</td><td>Okay as a gift<br><span class='review-text'>After I bought several I realized I could have sent &quot;gift&quot; money via text without the fees or wait.</span></td></tr>
+<tr data-status='Correct'><td>93</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Good gift<br><span class='review-text'>Those who already have everything, they can buy an audible book, an old rerun of a favorite movie, some little thing they may want, or whatever as a gift for any occasion. I recommend.</span></td></tr>
+<tr data-status='Correct'><td>94</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>So convenient.<br><span class='review-text'>Arrived on time, in perfect shape, and best of all the person receiving the gift can buy whatever they want. One size fits all!</span></td></tr>
+<tr data-status='Correct'><td>95</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Just what was ordered.<br><span class='review-text'>Made holiday shopping easy!</span></td></tr>
+<tr data-status='Correct'><td>96</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Can Do It From Home<br><span class='review-text'>Usually I either receive an Amazon gift card as a birthday and/or Christmas gift or I purchase them at a store. Then it&#x27;s very easy to add the amount to my gift card balance using my cell phone. Well I was stuck inside for several days due to a blizzard and I bought quite a few books then due to a travel ban I could not go to the store to purchase a gift card.&lt;br /&gt;So after checking my Gift Card Balance I saw that I had overindulged and it needed to be topped up. One of the options under Manage Your Balance was to Reload Your Balance. I had never used this option but decided to try it. It was so easy to do and I didn&#x27;t have to leave the comfort of my home. I will be using it again in the future.</span></td></tr>
+<tr data-status='Correct'><td>97</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Love it!<br><span class='review-text'>Love my card!!</span></td></tr>
+<tr data-status='Correct'><td>98</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Easy to use<br><span class='review-text'>It’s easy to use and very convenient. I would definitely consider refill more in the future</span></td></tr>
+<tr data-status='Mismatch'><td>99</td><td>3.0 stars</td><td>NEGATIVE</td><td>POSITIVE</td><td class='status'>Mismatch</td><td>Easy to use<br><span class='review-text'>Very easy to use. I wish I knew about it earlier</span></td></tr>
+<tr data-status='Correct'><td>100</td><td>5.0 stars</td><td>POSITIVE</td><td>POSITIVE</td><td class='status'>Correct</td><td>Perfect gift sent I a lovely container<br><span class='review-text'>Sent in a lovely container</span></td></tr></tbody>
+</table>
+</div>
+</main>
+<script>
+function filterRows(status, clicked) {
+  let count = 0;
+  document.querySelectorAll("tbody tr").forEach(row => {
+    const show = status === "All" || row.dataset.status === status;
+    row.hidden = !show;
+    if (show) count++;
+  });
+  document.querySelectorAll("button").forEach(button =>
+    button.classList.remove("active"));
+  clicked.classList.add("active");
+  document.getElementById("visible-count").textContent = count + " reviews shown";
+}
+filterRows("All", document.querySelector("button"));
+</script>
+</body>
+</html>

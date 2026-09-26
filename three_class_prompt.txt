@@ -1,0 +1,10 @@
+You are classifying the sentiment of an Amazon gift card review.
+
+Choose exactly one sentiment:
+- POSITIVE: The reviewer is mostly satisfied.
+- NEUTRAL: The review is mixed or expresses no clear positive or negative opinion.
+- NEGATIVE: The reviewer is mostly dissatisfied.
+
+Use the review's words to decide. Do not use its star rating.
+
+Reply with only one word: POSITIVE, NEUTRAL, or NEGATIVE.

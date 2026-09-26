@@ -1,0 +1,1602 @@
+[
+  {
+    "review_number": 1,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 1,
+      "anticipation": 3,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 3,
+      "sadness": 0,
+      "surprise": 3,
+      "trust": 2
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 2,
+    "model_emotion": "joy",
+    "wordlist_emotion": "joy",
+    "wordlist_scores": {
+      "anger": 1,
+      "anticipation": 6,
+      "disgust": 1,
+      "fear": 0,
+      "joy": 7,
+      "sadness": 2,
+      "surprise": 4,
+      "trust": 3
+    },
+    "tie_or_no_match": false
+  },
+  {
+    "review_number": 3,
+    "model_emotion": "joy",
+    "wordlist_emotion": "joy",
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 5,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 7,
+      "sadness": 0,
+      "surprise": 4,
+      "trust": 2
+    },
+    "tie_or_no_match": false
+  },
+  {
+    "review_number": 4,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 1,
+      "anticipation": 8,
+      "disgust": 0,
+      "fear": 1,
+      "joy": 8,
+      "sadness": 1,
+      "surprise": 3,
+      "trust": 4
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 5,
+    "model_emotion": "anger",
+    "wordlist_emotion": "joy",
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 5,
+      "disgust": 0,
+      "fear": 1,
+      "joy": 8,
+      "sadness": 1,
+      "surprise": 5,
+      "trust": 3
+    },
+    "tie_or_no_match": false
+  },
+  {
+    "review_number": 6,
+    "model_emotion": "joy",
+    "wordlist_emotion": "joy",
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 0,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 1,
+      "sadness": 0,
+      "surprise": 0,
+      "trust": 0
+    },
+    "tie_or_no_match": false
+  },
+  {
+    "review_number": 7,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 2,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 2,
+      "sadness": 0,
+      "surprise": 2,
+      "trust": 0
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 8,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 1,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 1,
+      "sadness": 0,
+      "surprise": 1,
+      "trust": 0
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 9,
+    "model_emotion": "joy",
+    "wordlist_emotion": "joy",
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 0,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 1,
+      "sadness": 0,
+      "surprise": 0,
+      "trust": 0
+    },
+    "tie_or_no_match": false
+  },
+  {
+    "review_number": 10,
+    "model_emotion": "joy",
+    "wordlist_emotion": "anticipation",
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 1,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 0,
+      "sadness": 0,
+      "surprise": 0,
+      "trust": 0
+    },
+    "tie_or_no_match": false
+  },
+  {
+    "review_number": 11,
+    "model_emotion": "joy",
+    "wordlist_emotion": "joy",
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 5,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 6,
+      "sadness": 0,
+      "surprise": 3,
+      "trust": 3
+    },
+    "tie_or_no_match": false
+  },
+  {
+    "review_number": 12,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 3,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 3,
+      "sadness": 0,
+      "surprise": 3,
+      "trust": 1
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 13,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 1,
+      "anticipation": 2,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 2,
+      "sadness": 0,
+      "surprise": 2,
+      "trust": 1
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 14,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 1,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 1,
+      "sadness": 0,
+      "surprise": 1,
+      "trust": 0
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 15,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 1,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 1,
+      "sadness": 0,
+      "surprise": 1,
+      "trust": 1
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 16,
+    "model_emotion": "anger",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 1,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 1,
+      "sadness": 0,
+      "surprise": 0,
+      "trust": 1
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 17,
+    "model_emotion": "joy",
+    "wordlist_emotion": "anticipation",
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 2,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 1,
+      "sadness": 0,
+      "surprise": 1,
+      "trust": 0
+    },
+    "tie_or_no_match": false
+  },
+  {
+    "review_number": 18,
+    "model_emotion": "anger",
+    "wordlist_emotion": "anticipation",
+    "wordlist_scores": {
+      "anger": 1,
+      "anticipation": 8,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 4,
+      "sadness": 0,
+      "surprise": 3,
+      "trust": 1
+    },
+    "tie_or_no_match": false
+  },
+  {
+    "review_number": 19,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 2,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 2,
+      "sadness": 0,
+      "surprise": 1,
+      "trust": 1
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 20,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 3,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 3,
+      "sadness": 0,
+      "surprise": 3,
+      "trust": 2
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 21,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 2,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 2,
+      "sadness": 0,
+      "surprise": 2,
+      "trust": 2
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 22,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 2,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 2,
+      "sadness": 0,
+      "surprise": 2,
+      "trust": 2
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 23,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 2,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 2,
+      "sadness": 0,
+      "surprise": 2,
+      "trust": 2
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 24,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 2,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 2,
+      "sadness": 0,
+      "surprise": 2,
+      "trust": 2
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 25,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 2,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 2,
+      "sadness": 0,
+      "surprise": 2,
+      "trust": 2
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 26,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 2,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 2,
+      "sadness": 0,
+      "surprise": 2,
+      "trust": 2
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 27,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 2,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 2,
+      "sadness": 0,
+      "surprise": 2,
+      "trust": 2
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 28,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 2,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 2,
+      "sadness": 0,
+      "surprise": 2,
+      "trust": 2
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 29,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 2,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 2,
+      "sadness": 0,
+      "surprise": 2,
+      "trust": 2
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 30,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 2,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 2,
+      "sadness": 0,
+      "surprise": 2,
+      "trust": 2
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 31,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 2,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 2,
+      "sadness": 0,
+      "surprise": 1,
+      "trust": 1
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 32,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 0,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 0,
+      "sadness": 0,
+      "surprise": 0,
+      "trust": 0
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 33,
+    "model_emotion": "anger",
+    "wordlist_emotion": "sadness",
+    "wordlist_scores": {
+      "anger": 1,
+      "anticipation": 0,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 0,
+      "sadness": 2,
+      "surprise": 0,
+      "trust": 1
+    },
+    "tie_or_no_match": false
+  },
+  {
+    "review_number": 34,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 1,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 1,
+      "sadness": 0,
+      "surprise": 1,
+      "trust": 0
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 35,
+    "model_emotion": "trust",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 0,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 0,
+      "sadness": 0,
+      "surprise": 0,
+      "trust": 0
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 36,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 3,
+      "disgust": 0,
+      "fear": 2,
+      "joy": 5,
+      "sadness": 0,
+      "surprise": 5,
+      "trust": 1
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 37,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 5,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 5,
+      "sadness": 0,
+      "surprise": 4,
+      "trust": 0
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 38,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 1,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 1,
+      "sadness": 0,
+      "surprise": 0,
+      "trust": 0
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 39,
+    "model_emotion": "anticipation",
+    "wordlist_emotion": "anticipation",
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 2,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 1,
+      "sadness": 0,
+      "surprise": 1,
+      "trust": 0
+    },
+    "tie_or_no_match": false
+  },
+  {
+    "review_number": 40,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 1,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 1,
+      "sadness": 0,
+      "surprise": 1,
+      "trust": 0
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 41,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 2,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 2,
+      "sadness": 0,
+      "surprise": 2,
+      "trust": 0
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 42,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 1,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 1,
+      "sadness": 0,
+      "surprise": 0,
+      "trust": 1
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 43,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 2,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 2,
+      "sadness": 0,
+      "surprise": 1,
+      "trust": 2
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 44,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 1,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 1,
+      "sadness": 0,
+      "surprise": 0,
+      "trust": 0
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 45,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 2,
+      "anticipation": 2,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 2,
+      "sadness": 0,
+      "surprise": 2,
+      "trust": 2
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 46,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 0,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 0,
+      "sadness": 0,
+      "surprise": 0,
+      "trust": 0
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 47,
+    "model_emotion": "joy",
+    "wordlist_emotion": "joy",
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 1,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 2,
+      "sadness": 0,
+      "surprise": 1,
+      "trust": 1
+    },
+    "tie_or_no_match": false
+  },
+  {
+    "review_number": 48,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 1,
+      "anticipation": 1,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 1,
+      "sadness": 0,
+      "surprise": 1,
+      "trust": 0
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 49,
+    "model_emotion": "joy",
+    "wordlist_emotion": "joy",
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 3,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 4,
+      "sadness": 0,
+      "surprise": 3,
+      "trust": 2
+    },
+    "tie_or_no_match": false
+  },
+  {
+    "review_number": 50,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 0,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 0,
+      "sadness": 0,
+      "surprise": 0,
+      "trust": 0
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 51,
+    "model_emotion": "anticipation",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 5,
+      "disgust": 0,
+      "fear": 1,
+      "joy": 5,
+      "sadness": 0,
+      "surprise": 5,
+      "trust": 2
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 52,
+    "model_emotion": "anger",
+    "wordlist_emotion": "anticipation",
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 3,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 2,
+      "sadness": 0,
+      "surprise": 2,
+      "trust": 1
+    },
+    "tie_or_no_match": false
+  },
+  {
+    "review_number": 53,
+    "model_emotion": "joy",
+    "wordlist_emotion": "joy",
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 5,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 6,
+      "sadness": 0,
+      "surprise": 4,
+      "trust": 3
+    },
+    "tie_or_no_match": false
+  },
+  {
+    "review_number": 54,
+    "model_emotion": "joy",
+    "wordlist_emotion": "joy",
+    "wordlist_scores": {
+      "anger": 1,
+      "anticipation": 4,
+      "disgust": 1,
+      "fear": 1,
+      "joy": 6,
+      "sadness": 1,
+      "surprise": 4,
+      "trust": 4
+    },
+    "tie_or_no_match": false
+  },
+  {
+    "review_number": 55,
+    "model_emotion": "joy",
+    "wordlist_emotion": "joy",
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 1,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 2,
+      "sadness": 0,
+      "surprise": 1,
+      "trust": 0
+    },
+    "tie_or_no_match": false
+  },
+  {
+    "review_number": 56,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 0,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 0,
+      "sadness": 0,
+      "surprise": 0,
+      "trust": 0
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 57,
+    "model_emotion": "joy",
+    "wordlist_emotion": "anticipation",
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 2,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 1,
+      "sadness": 0,
+      "surprise": 1,
+      "trust": 0
+    },
+    "tie_or_no_match": false
+  },
+  {
+    "review_number": 58,
+    "model_emotion": "joy",
+    "wordlist_emotion": "joy",
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 3,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 6,
+      "sadness": 0,
+      "surprise": 3,
+      "trust": 2
+    },
+    "tie_or_no_match": false
+  },
+  {
+    "review_number": 59,
+    "model_emotion": "joy",
+    "wordlist_emotion": "joy",
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 3,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 4,
+      "sadness": 0,
+      "surprise": 2,
+      "trust": 1
+    },
+    "tie_or_no_match": false
+  },
+  {
+    "review_number": 60,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 1,
+      "anticipation": 2,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 2,
+      "sadness": 0,
+      "surprise": 2,
+      "trust": 0
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 61,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 4,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 4,
+      "sadness": 0,
+      "surprise": 4,
+      "trust": 1
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 62,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 2,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 2,
+      "sadness": 0,
+      "surprise": 1,
+      "trust": 1
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 63,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 1,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 1,
+      "sadness": 0,
+      "surprise": 1,
+      "trust": 0
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 64,
+    "model_emotion": "anger",
+    "wordlist_emotion": "trust",
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 3,
+      "disgust": 0,
+      "fear": 2,
+      "joy": 2,
+      "sadness": 2,
+      "surprise": 1,
+      "trust": 5
+    },
+    "tie_or_no_match": false
+  },
+  {
+    "review_number": 65,
+    "model_emotion": "joy",
+    "wordlist_emotion": "joy",
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 6,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 7,
+      "sadness": 0,
+      "surprise": 5,
+      "trust": 3
+    },
+    "tie_or_no_match": false
+  },
+  {
+    "review_number": 66,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 0,
+      "disgust": 1,
+      "fear": 0,
+      "joy": 0,
+      "sadness": 1,
+      "surprise": 0,
+      "trust": 0
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 67,
+    "model_emotion": "joy",
+    "wordlist_emotion": "joy",
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 3,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 4,
+      "sadness": 0,
+      "surprise": 2,
+      "trust": 2
+    },
+    "tie_or_no_match": false
+  },
+  {
+    "review_number": 68,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 0,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 0,
+      "sadness": 0,
+      "surprise": 0,
+      "trust": 0
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 69,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 0,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 0,
+      "sadness": 0,
+      "surprise": 0,
+      "trust": 0
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 70,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 0,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 0,
+      "sadness": 0,
+      "surprise": 0,
+      "trust": 0
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 71,
+    "model_emotion": "joy",
+    "wordlist_emotion": "anticipation",
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 8,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 7,
+      "sadness": 0,
+      "surprise": 5,
+      "trust": 3
+    },
+    "tie_or_no_match": false
+  },
+  {
+    "review_number": 72,
+    "model_emotion": "joy",
+    "wordlist_emotion": "anticipation",
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 4,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 3,
+      "sadness": 0,
+      "surprise": 1,
+      "trust": 2
+    },
+    "tie_or_no_match": false
+  },
+  {
+    "review_number": 73,
+    "model_emotion": "joy",
+    "wordlist_emotion": "joy",
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 3,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 4,
+      "sadness": 0,
+      "surprise": 3,
+      "trust": 0
+    },
+    "tie_or_no_match": false
+  },
+  {
+    "review_number": 74,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 1,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 1,
+      "sadness": 0,
+      "surprise": 1,
+      "trust": 1
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 75,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 0,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 0,
+      "sadness": 0,
+      "surprise": 0,
+      "trust": 0
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 76,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 1,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 1,
+      "sadness": 0,
+      "surprise": 0,
+      "trust": 1
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 77,
+    "model_emotion": "joy",
+    "wordlist_emotion": "joy",
+    "wordlist_scores": {
+      "anger": 1,
+      "anticipation": 3,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 4,
+      "sadness": 0,
+      "surprise": 2,
+      "trust": 1
+    },
+    "tie_or_no_match": false
+  },
+  {
+    "review_number": 78,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 0,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 0,
+      "sadness": 0,
+      "surprise": 0,
+      "trust": 0
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 79,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 0,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 0,
+      "sadness": 0,
+      "surprise": 0,
+      "trust": 0
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 80,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 0,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 0,
+      "sadness": 0,
+      "surprise": 0,
+      "trust": 0
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 81,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 2,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 1,
+      "sadness": 1,
+      "surprise": 2,
+      "trust": 0
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 82,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 1,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 1,
+      "sadness": 0,
+      "surprise": 1,
+      "trust": 0
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 83,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 2,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 2,
+      "sadness": 0,
+      "surprise": 1,
+      "trust": 1
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 84,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 2,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 2,
+      "sadness": 0,
+      "surprise": 2,
+      "trust": 1
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 85,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 2,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 2,
+      "sadness": 0,
+      "surprise": 2,
+      "trust": 2
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 86,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 4,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 4,
+      "sadness": 0,
+      "surprise": 3,
+      "trust": 3
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 87,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 0,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 0,
+      "sadness": 0,
+      "surprise": 0,
+      "trust": 0
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 88,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 1,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 1,
+      "sadness": 0,
+      "surprise": 1,
+      "trust": 0
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 89,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 2,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 2,
+      "sadness": 0,
+      "surprise": 1,
+      "trust": 0
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 90,
+    "model_emotion": "joy",
+    "wordlist_emotion": "joy",
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 3,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 4,
+      "sadness": 0,
+      "surprise": 2,
+      "trust": 1
+    },
+    "tie_or_no_match": false
+  },
+  {
+    "review_number": 91,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 1,
+      "anticipation": 4,
+      "disgust": 0,
+      "fear": 1,
+      "joy": 4,
+      "sadness": 0,
+      "surprise": 3,
+      "trust": 4
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 92,
+    "model_emotion": "sadness",
+    "wordlist_emotion": "anticipation",
+    "wordlist_scores": {
+      "anger": 1,
+      "anticipation": 4,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 3,
+      "sadness": 0,
+      "surprise": 3,
+      "trust": 1
+    },
+    "tie_or_no_match": false
+  },
+  {
+    "review_number": 93,
+    "model_emotion": "joy",
+    "wordlist_emotion": "joy",
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 3,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 4,
+      "sadness": 0,
+      "surprise": 3,
+      "trust": 3
+    },
+    "tie_or_no_match": false
+  },
+  {
+    "review_number": 94,
+    "model_emotion": "joy",
+    "wordlist_emotion": "anticipation",
+    "wordlist_scores": {
+      "anger": 1,
+      "anticipation": 4,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 3,
+      "sadness": 0,
+      "surprise": 2,
+      "trust": 1
+    },
+    "tie_or_no_match": false
+  },
+  {
+    "review_number": 95,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 2,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 2,
+      "sadness": 0,
+      "surprise": 1,
+      "trust": 1
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 96,
+    "model_emotion": "joy",
+    "wordlist_emotion": "anticipation",
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 9,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 7,
+      "sadness": 1,
+      "surprise": 7,
+      "trust": 2
+    },
+    "tie_or_no_match": false
+  },
+  {
+    "review_number": 97,
+    "model_emotion": "joy",
+    "wordlist_emotion": "joy",
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 0,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 2,
+      "sadness": 0,
+      "surprise": 0,
+      "trust": 0
+    },
+    "tie_or_no_match": false
+  },
+  {
+    "review_number": 98,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 0,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 0,
+      "sadness": 0,
+      "surprise": 0,
+      "trust": 0
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 99,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 0,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 0,
+      "sadness": 0,
+      "surprise": 0,
+      "trust": 0
+    },
+    "tie_or_no_match": true
+  },
+  {
+    "review_number": 100,
+    "model_emotion": "joy",
+    "wordlist_emotion": null,
+    "wordlist_scores": {
+      "anger": 0,
+      "anticipation": 4,
+      "disgust": 0,
+      "fear": 0,
+      "joy": 4,
+      "sadness": 2,
+      "surprise": 3,
+      "trust": 3
+    },
+    "tie_or_no_match": true
+  }
+]

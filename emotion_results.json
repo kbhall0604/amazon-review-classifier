@@ -1,0 +1,502 @@
+[
+  {
+    "review_number": 1,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 2,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 3,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 4,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 5,
+    "sentiment": "NEGATIVE",
+    "emotion": "anger"
+  },
+  {
+    "review_number": 6,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 7,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 8,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 9,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 10,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 11,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 12,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 13,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 14,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 15,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 16,
+    "sentiment": "NEGATIVE",
+    "emotion": "anger"
+  },
+  {
+    "review_number": 17,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 18,
+    "sentiment": "NEGATIVE",
+    "emotion": "anger"
+  },
+  {
+    "review_number": 19,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 20,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 21,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 22,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 23,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 24,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 25,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 26,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 27,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 28,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 29,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 30,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 31,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 32,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 33,
+    "sentiment": "NEGATIVE",
+    "emotion": "anger"
+  },
+  {
+    "review_number": 34,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 35,
+    "sentiment": "POSITIVE",
+    "emotion": "trust"
+  },
+  {
+    "review_number": 36,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 37,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 38,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 39,
+    "sentiment": "POSITIVE",
+    "emotion": "anticipation"
+  },
+  {
+    "review_number": 40,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 41,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 42,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 43,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 44,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 45,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 46,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 47,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 48,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 49,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 50,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 51,
+    "sentiment": "POSITIVE",
+    "emotion": "anticipation"
+  },
+  {
+    "review_number": 52,
+    "sentiment": "NEGATIVE",
+    "emotion": "anger"
+  },
+  {
+    "review_number": 53,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 54,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 55,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 56,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 57,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 58,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 59,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 60,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 61,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 62,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 63,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 64,
+    "sentiment": "NEGATIVE",
+    "emotion": "anger"
+  },
+  {
+    "review_number": 65,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 66,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 67,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 68,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 69,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 70,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 71,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 72,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 73,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 74,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 75,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 76,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 77,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 78,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 79,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 80,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 81,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 82,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 83,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 84,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 85,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 86,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 87,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 88,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 89,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 90,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 91,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 92,
+    "sentiment": "NEGATIVE",
+    "emotion": "sadness"
+  },
+  {
+    "review_number": 93,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 94,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 95,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 96,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 97,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 98,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 99,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  },
+  {
+    "review_number": 100,
+    "sentiment": "POSITIVE",
+    "emotion": "joy"
+  }
+]

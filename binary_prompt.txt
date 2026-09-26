@@ -1,0 +1,6 @@
+Read the Amazon customer review below and classify its sentiment.
+
+Reply with exactly one word: POSITIVE or NEGATIVE.
+POSITIVE means the customer expresses a favorable opinion.
+NEGATIVE means the customer expresses an unfavorable or mixed opinion.
+Use only the review text. Do not explain your answer.

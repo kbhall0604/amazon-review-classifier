@@ -1,0 +1,11 @@
+Read the review title and text. Classify the sentiment as POSITIVE or NEGATIVE, and choose the single primary emotion expressed by the reviewer.
+
+Choose the emotion from exactly these eight options:
+anger, anticipation, disgust, fear, joy, sadness, surprise, trust
+
+For sentiment, use POSITIVE for a favorable opinion. Use NEGATIVE for an unfavorable or mixed opinion. Base both answers only on the title and text. You will not receive the star rating.
+
+Reply with exactly one JSON object in this format:
+{"sentiment":"POSITIVE","emotion":"joy"}
+
+Do not include any other words or formatting.
